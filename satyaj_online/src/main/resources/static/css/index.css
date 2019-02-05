@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-repeat:no-repeat;
+	color: purple;
+	padding: 20px;
+}
+.img_menu{
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	margin: 5px;
+}

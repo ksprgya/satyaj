@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<title>Edit User</title>
+
+</head>
+<body>
+<h2>Edit User</h2>
+<hr>
+<div ng-app="myApp"   ng-controller="edituserCtrl" >
+
+Param -	{{param}}
+URL	{{url}}
+<form action="updateUser" onsubmit="return validate()" method="post">
+<input type="hidden" name="id" />
+<table>
+	<tr>
+		<td>Your Name : </td>
+		<td> <input type="text" name="name" id="name" ng-model="name" /> </td>		
+	</tr>
+	<tr>
+		<td>Mobile : </td>
+		<td> <input type="text" name="mobile" ng-model="mobile" /> </td>		
+	</tr>
+	<tr>
+		<td>Email : </td>
+		<td> <input type="email" name="email" ng-model="email" /> </td>		
+	</tr>
+			
+	<tr>
+		<td>City : </td>
+		<td> <input type="text" name="city" ng-model="city" /> </td>		
+	</tr>
+	<tr>
+		<td> <input type="submit" value="Save"  /> </td>		
+	</tr>	
+	
+	</table>
+</form>
+
+</div>
+
+</body>
+<script  src="../js/app.js"></script>
+<script src="../js/editusercontroller.js" ></script>
+</html>

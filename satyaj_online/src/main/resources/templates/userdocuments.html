@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Document</title>
+<script type="text/javascript" src="../js/user_document.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<h2>User Document</h2>
+<hr>
+<div>
+<form action="saveDocument" enctype="multipart/form-data"  onsubmit="return validate();" method="post">
+<table>
+	<tr>
+		<td>Upload File : </td>
+		<td> <input type="file" name="file" id="file" /> </td>		
+		<input type="hidden" name="user_id" value="2" />
+	</tr>
+	<tr>
+		<td> <input type="submit" value="Save"  /> </td>		
+	</tr>	
+	
+	</table>
+</form>
+
+</div>
+
+</body>
+</html>

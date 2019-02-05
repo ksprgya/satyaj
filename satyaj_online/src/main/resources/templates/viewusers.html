@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<link rel="stylesheet" href="css/viewusers.css" >
+
+</head>
+<body ng-app="myApp" >
+<div  ng-controller="userCtrl" >
+<h2>User List</h2>
+<hr>
+<a href="registerUser"  ><h4>New User</h4></a>
+<hr>   
+ <table>
+ 	<tr>
+ 		<th>Id</th>
+ 		<th>Name</th>
+ 		<th>Mobile</th>
+ 		<th>Email</th>
+ 		<th>City</th>
+ 		<th>Documents</th>
+ 		<th>Edit</th>
+ 		<th>Delete</th>
+ 	</tr>
+ 	<tr ng-repeat="user in userList" >
+ 		<td>{{user.id}}</td>
+ 		<td>{{user.name}}</td>
+ 		<td>{{user.mobile}}</td>
+ 		<td>{{user.email}}</td>
+ 		<td>{{user.city}}</td>
+ 		<td><a href="uploadDocument/{{user.id}}}}">Document</a> </td>
+ 		<td><a href="edituser/{{user.id}}" >Edit</a> <button ng-click="editUser(user.id);" >Edit Js function</button> </td>
+ 		<td><a href="#/regUser/{{user.id}}" >Edit</a>  </td> 		
+ 		<td><a href="">Delete</a> </td>
+ 	</tr>
+ </table>
+
+</div>
+   
+</body>
+<script src="js/app.js"></script>
+<script src="js/viewusers.js"></script>
+</html>

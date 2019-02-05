@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register User</title>
+<script type="text/javascript" src="js/user_register.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+<body>
+<h2>Register User</h2>
+<hr>
+<div>
+<form action="saveUser" onsubmit="return validate()" method="post">
+<table>
+	<tr>
+		<td>Your Name : </td>
+		<td> <input type="text" name="name" id="name" /> </td>		
+	</tr>
+	<tr>
+		<td>Mobile : </td>
+		<td> <input type="number" name="mobile" /> </td>		
+	</tr>
+	<tr>
+		<td>Email : </td>
+		<td> <input type="email" name="email" /> </td>		
+	</tr>
+			
+	<tr>
+		<td>City : </td>
+		<td> <input type="text" name="city" /> </td>		
+	</tr>
+	<tr>
+		<td> <input type="submit" value="Save"  /> </td>		
+	</tr>	
+	
+	</table>
+</form>
+
+</div>
+
+</body>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+
+</html>
